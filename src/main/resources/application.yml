@@ -1,0 +1,9 @@
+spring:
+  security:
+    ignored: /users/**
+  cloud:
+    gcp:
+      firestore:
+        credentials:
+          location: /var/credentials.json
+      project-id: "totemic-union-396517"

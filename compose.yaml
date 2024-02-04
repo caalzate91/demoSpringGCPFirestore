@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  demogcpfirestore:
+    image: demogcpfirestore
+    ports:
+      - 8080:8080
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/credentials.json
+    volumes:
+      - ./src/main/resources/credentials.json:/app/credentials.json
